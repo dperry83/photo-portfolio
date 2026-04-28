@@ -1,0 +1,26 @@
+header {
+  background-color: cornflowerblue;
+}
+
+section {
+  margin: 5px 0 5px 0;
+  background-color: papayawhip
+}
+
+#hero {
+  display: flex;
+}
+
+.image-targets {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.sample-box {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  align-content: center;
+}
