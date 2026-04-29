@@ -1,26 +1,23 @@
 header {
   background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  justify-self:left;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
 section {
-  margin: 5px 0 5px 0;
-  background-color: papayawhip
+  padding: 96px;
+  margin: 15px 0 15px 0;
+  background-color: papayawhip;
+  max-width: 1200px;
+  justify-self: center;
 }
 
-#hero {
-  display: flex;
-}
-
-.image-targets {
-  display: flex;
-  justify-content: space-around;
-  
-}
-
-.sample-box {
-  border: 1px solid black;
-  width: 250px;
-  height: 250px;
-  text-align: center;
-  align-content: center;
-}
