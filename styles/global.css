@@ -5,7 +5,7 @@
   --color-surface-dark: #22201c;
   --color-surface-dark-muted: #afa590;
 
-  --color-text: #22201c;
+  --color-text: #4b453c;
   --color-text-muted: #6f6a63;
   --color-text-on-dark: #f7f4ee;
   --color-text-on-dark-muted: #d8d0c4;
@@ -278,7 +278,7 @@ section {
   max-width: 36ch;
 }
 
-#hero-text .eyebrow {
+.eyebrow {
   font-size: var(--step--1);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -294,6 +294,114 @@ section {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+}
+
+/* INVESTMENT PAGE STYLING */
+.every-session-includes {
+  margin-top: var(--space-5);
+  padding-block: var(--space-7);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.every-section-includes .section-title {
+  padding-bottom: var(--space-3);
+}
+
+.inclusion-list {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding-left: var(--space-5);
+  /* list-style: none; */
+}
+
+.inclusion-list li {
+  position: relative;
+  font-size: var(--step-1);
+}
+
+.package-options {
+  padding-top: var(--space-7);
+}
+
+.package {
+  padding-block: var(--space-7);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.package:first-of-type {
+  margin-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.package-label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.package-name {
+  padding: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.package-price {
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.package-content {
+  margin-top: var(--space-5);
+  max-width: 38rem;
+}
+
+.package-best-for {
+  font-size: var(--step-2);
+  line-height: 1.45;
+}
+
+.package-subhead {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.package-list {
+  margin: 0;
+  padding-left: var(--space-5);
+}
+
+.package-list li {
+  padding-top: var(--space-2);
+  font-size: var(--step-1);
+}
+
+.package-list b {
+  font-size: inherit;
+  font-weight: 550;
+}
+
+.package--launch {
+  margin-inline: calc(var(--space-4) * -1);
+  padding-inline: var(--space-4);
+  background-color: var(--color-surface);
+}
+
+.package-recommendation {
+  margin-bottom: var(--space-3);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
 }
 
 /* BUTTON STYLING */
@@ -354,5 +462,12 @@ section {
   .cta {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .every-session-includes {
+    display: grid;
+    grid-template-columns: minmax(12rem, 0.75fr) minmax(0, 1.5fr);
+    gap: var(--space-7);
+    align-items: start;
   }
 }
